@@ -30,7 +30,7 @@ The contract and site is a simple proof-of-concept. Some noteworthy limitations:
 ### DApp
 1. DApp is a truffle project in the folder "dapp".
 2. "truffle compile" and "truffle test" should work as expected. 
-3. Deploy the DApp 
+3. Run "truffle migrate" to deploy the DApp locally against ganache-cli.
 
 ### Server
 1. You'll need Ruby on Rails to execute the server on your machine. If you don't have Ruby on Rails installed, please follow the instructions on this [website](https://gorails.com/setup/osx/10.14-mojave).
