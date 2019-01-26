@@ -26,6 +26,25 @@ The contract and site is a simple proof-of-concept. Some noteworthy limitations:
 - There's no mechanism as of now to arbitrate contested bribes. 
 - Even paying gas fees can be very prohibitive for poor people in developing countries. This will surely dissuade people from using such as service. One possible solution to this is to have the gas cost covered through government grants and/or donations.
 
+## Setup and Execution
+### DApp
+1. DApp is a truffle project in the folder "dapp".
+2. "truffle compile" and "truffle test" should work as expected. 
+3. Deploy the DApp 
+
+### Server
+1. You'll need Ruby on Rails to execute the server on your machine. If you don't have Ruby on Rails installed, please follow the instructions on this [website](https://gorails.com/setup/osx/10.14-mojave).
+2. Download the contents of the "server" folder to your computer.
+3. Open a terminal and navigate to that folder. 
+4. Execute "bundle install" in the terminal window. If that doesn't work, first install the ruby language bundler with the command "gem install bundler" and then try the command again. 
+5. Copy the Bribes.json artifact file from the DApp's "build/contracts" folder and place it in the sub-directory "public" inside the web server folder. This is required for web3.js to initialize properly.
+6. Start the server with the command "rails s".
+7. Navigate to the site in the browser by going to the url "http://127.0.0.1:3000". 
+
+I realize this setup is not the most straighforward because of Ruby on Rails. Please email me at nkrishna@gmail.com with any questions.
+
+## Live Demo On Rinkeby 
+Contract address: 0x5E0b7dCad1979cb3747c6D454d2F869F8645B0eC
 
 
 
